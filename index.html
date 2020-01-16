@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Password Protected Link</title>
+  
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+Enter password: <input id='password' type='text'  />
+<a href="main.html" onclick="javascript:return validatePass()">enter your password and click this</a>
+
+<script>
+function validatePass(){
+    if(document.getElementById('password').value == 'password123'){
+        return true;
+    }else{
+        alert('wrong password!!');
+        return false;
+    }
+}
+</script>
+<!-- partial -->
+  
+</body>
+</html>
